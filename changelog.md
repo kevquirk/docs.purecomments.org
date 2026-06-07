@@ -7,8 +7,6 @@ tags: docs
 permalink: /changelog/
 ---
 
-# Changelog
-
 ## v1.6.0 - 27 May 2026
 
 ### Added
