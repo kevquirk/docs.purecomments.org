@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Classic Light",
+    "image": "classic-light.webp",
+    "text": "#222222",
+    "bg": "#ffffff",
+    "border": "#cccccc",
+    "accent": "#0066cc",
+    "accent_bg": "#f0f4f8"
+  },
+  {
+    "name": "Classic Dark",
+    "image": "classic-dark.webp",
+    "text": "#e8e8e8",
+    "bg": "#1a1a1a",
+    "border": "#444444",
+    "accent": "#4da6ff",
+    "accent_bg": "#2a2a2a"
+  },
+  {
+    "name": "Sepia Light",
+    "image": "sepia-light.webp",
+    "text": "#3b2f1e",
+    "bg": "#f5edd6",
+    "border": "#c8a97a",
+    "accent": "#8b4513",
+    "accent_bg": "#ede0c4"
+  },
+  {
+    "name": "Sepia Dark",
+    "image": "sepia-dark.webp",
+    "text": "#e8d5b0",
+    "bg": "#2a1f10",
+    "border": "#6b4f2a",
+    "accent": "#c8843a",
+    "accent_bg": "#3d2e18"
+  },
+  {
+    "name": "Forest Light",
+    "image": "forest-light.webp",
+    "text": "#1a2e1a",
+    "bg": "#f0f7ee",
+    "border": "#a8c8a0",
+    "accent": "#3a7d44",
+    "accent_bg": "#deeeda"
+  },
+  {
+    "name": "Forest Dark",
+    "image": "forest-dark.webp",
+    "text": "#d4e8d0",
+    "bg": "#1a2e1a",
+    "border": "#3a5c3a",
+    "accent": "#6abf69",
+    "accent_bg": "#243824"
+  },
+  {
+    "name": "Solarized Light",
+    "image": "solarized-light.webp",
+    "text": "#657b83",
+    "bg": "#fdf6e3",
+    "border": "#c8baa0",
+    "accent": "#268bd2",
+    "accent_bg": "#eee8d5"
+  },
+  {
+    "name": "Solarized Dark",
+    "image": "solarized-dark.webp",
+    "text": "#839496",
+    "bg": "#002b36",
+    "border": "#1d4b56",
+    "accent": "#268bd2",
+    "accent_bg": "#073642"
+  },
+  {
+    "name": "Nord Light",
+    "image": "nord-light.webp",
+    "text": "#2e3440",
+    "bg": "#eceff4",
+    "border": "#d8dee9",
+    "accent": "#5e81ac",
+    "accent_bg": "#e5e9f0"
+  },
+  {
+    "name": "Nord Dark",
+    "image": "nord-dark.webp",
+    "text": "#d8dee9",
+    "bg": "#2e3440",
+    "border": "#4c566a",
+    "accent": "#88c0d0",
+    "accent_bg": "#3b4252"
+  },
+  {
+    "name": "Rose Light",
+    "image": "rose-light.webp",
+    "text": "#3d1a1a",
+    "bg": "#fff5f5",
+    "border": "#e8b4b4",
+    "accent": "#c0392b",
+    "accent_bg": "#fce8e8"
+  },
+  {
+    "name": "Rose Dark",
+    "image": "rose-dark.webp",
+    "text": "#f5d5d5",
+    "bg": "#2a1010",
+    "border": "#6b3333",
+    "accent": "#e06060",
+    "accent_bg": "#3d1a1a"
+  },
+  {
+    "name": "Monochrome Light",
+    "image": "monochrome-light.webp",
+    "text": "#121212",
+    "bg": "#f5f5f5",
+    "border": "#cccccc",
+    "accent": "#333333",
+    "accent_bg": "#e8e8e8"
+  },
+  {
+    "name": "Monochrome Dark",
+    "image": "monochrome-dark.webp",
+    "text": "#f0f0f0",
+    "bg": "#121212",
+    "border": "#3a3a3a",
+    "accent": "#ffffff",
+    "accent_bg": "#1e1e1e"
+  },
+  {
+    "name": "Ocean Light",
+    "image": "ocean-light.webp",
+    "text": "#0d2233",
+    "bg": "#f0f8ff",
+    "border": "#a0c8e0",
+    "accent": "#0077aa",
+    "accent_bg": "#dceef8"
+  },
+  {
+    "name": "Ocean Dark",
+    "image": "ocean-dark.webp",
+    "text": "#cce8f0",
+    "bg": "#0d2233",
+    "border": "#1a4a66",
+    "accent": "#00bcd4",
+    "accent_bg": "#122d42"
+  }
+]

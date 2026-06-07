@@ -1,0 +1,25 @@
+[
+    {
+        "label": "Getting started",
+        "items": [
+            { "label": "Get started", "slug": "getting-started-with-pure-comments" },
+            { "label": "How to update", "slug": "how-to-update-pure-comments" },
+            { "label": "Major bug in v1.1.0", "slug": "major-bug-in-v110" }
+        ]
+    },
+    {
+        "label": "Configuration",
+        "items": [
+            { "label": "Managing comments", "slug": "managing-comments-in-pure-comments" },
+            { "label": "Setting up email notifications", "slug": "setting-up-email-notifications" }
+        ]
+    },
+    {
+        "label": "Customisation",
+        "items": [
+            { "label": "Theming Pure Comments", "slug": "theming-pure-comments" },
+            { "label": "Working with Data Attributes", "slug": "working-with-data-attributes" },
+            { "label": "Working with translations", "slug": "working-with-translations" }
+        ]
+    }
+]
