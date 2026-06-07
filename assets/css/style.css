@@ -18,9 +18,10 @@
 :root {
     --bg:           #FAFAFA;
     --text:         #212121;
-    --accent:       #af2e1b;
+    --accent:       #0D47A1;
     --border:       #898EA4;
-    --accent-bg:    #FFF0F0;
+    --accent-bg:    #F5F7FF;
+    --red:          #af2e1b;
     --standard-border: 1px solid var(--border);
     --sidebar-bg:   #F0F2F8;
     --topbar-bg:    #FAFAFA;
@@ -46,6 +47,7 @@ html[data-theme="dark"],
     --accent-bg:    #2B2B2B;
     --sidebar-bg:   #1A1A1A;
     --topbar-bg:    #212121;
+    --red:          #ff8a80;
     color-scheme: dark;
 }
 
@@ -59,6 +61,7 @@ html[data-theme="dark"],
         --accent-bg:    #2B2B2B;
         --sidebar-bg:   #1A1A1A;
         --topbar-bg:    #212121;
+        --red:          #ff8a80;
         color-scheme: dark;
     }
 }
@@ -66,9 +69,10 @@ html[data-theme="dark"],
 html[data-theme="light"] {
     --bg:           #FAFAFA;
     --text:         #212121;
-    --accent:       #af2e1b;
+    --accent:       #0D47A1;
     --border:       #898EA4;
-    --accent-bg:    #FFF0F0;
+    --accent-bg:    #F5F7FF;
+    --red:          #af2e1b;
     --sidebar-bg:   #F0F2F8;
     --topbar-bg:    #FAFAFA;
     color-scheme: light;
@@ -146,6 +150,10 @@ a:hover { text-decoration: none; }
 .logo .service {
     background: var(--accent);
     color: var(--bg);
+}
+
+.logo.red {
+    --accent: var(--red);
 }
 
 .sidebar-subtitle {
