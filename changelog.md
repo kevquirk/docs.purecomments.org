@@ -7,6 +7,11 @@ tags: docs
 permalink: /changelog/
 ---
 
+## v1.6.1 - 13 June 2026
+
+### Updated
+- German translations for search (thanks [@bttr](https://codeberg.org/bttr) for [#2](https://codeberg.org/kevquirk/purecomments/pulls/2))
+
 ## v1.6.0 - 27 May 2026
 
 ### Added
