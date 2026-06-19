@@ -36,7 +36,7 @@ Once you've uploaded Pure Comments to your server, navigate to its URL, and you 
 
 This is what the setup screen looks like:
 
-![Setup screen](/content/images/getting-started-with-pure-comments/setup.webp)
+![Setup screen]/assets/images/getting-started-with-pure-comments/setup.webp)
 
 All you need to do is fill in all the relevant fields, hit the save button, and Pure Comments is installed and ready for use!
 
