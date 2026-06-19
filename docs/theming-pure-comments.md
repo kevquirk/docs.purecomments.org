@@ -17,8 +17,8 @@ First, copy the [example stylesheet](https://codeberg.org/kevquirk/purecomments/
 
 From here you can edit `comments.css` to fit the style of your blog's design. If you choose not to update `comments.css`, this is what Pure Comments will look like using the default `comments.css` file:
 
-![comments example light]/assets/images/theming-pure-comments/comments-example-light.webp)
+![comments example light](/assets/images/theming-pure-comments/comments-example-light.webp)
 *Light mode*
 
-![comments example dark]/assets/images/theming-pure-comments/comments-example-dark.webp)
+![comments example dark](/assets/images/theming-pure-comments/comments-example-dark.webp)
 *Dark mode*
