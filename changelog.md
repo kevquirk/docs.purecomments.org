@@ -7,6 +7,14 @@ tags: docs
 permalink: /changelog/
 ---
 
+## v1.6.2 - 26 June 2026
+
+### Security
+- Secured the "Remember me" cookie mechanism by replacing the static HMAC token with random, database-backed tokens stored in a new `remember_tokens` table. Tokens are now invalidated on the server when logging out.
+
+### Fixed
+- Fixed an `Undefined array key "smtp_debug"` PHP notice when saving configurations with Amazon SES or no email provider selected.
+
 ## v1.6.1 - 13 June 2026
 
 ### Updated
