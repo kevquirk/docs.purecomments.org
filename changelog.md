@@ -7,6 +7,11 @@ tags: docs
 permalink: /changelog/
 ---
 
+## v1.6.3 - 29 June 2026
+
+### Fixed
+- Fixed an issue where the pending comments list in the admin panel incorrectly excluded comments from guests who submitted a comment with a name matching the admin author's name (thanks [@daj](https://codeberg.org/daj) for [#3](https://codeberg.org/kevquirk/purecomments/issues/3)).
+
 ## v1.6.2 - 26 June 2026
 
 ### Security
