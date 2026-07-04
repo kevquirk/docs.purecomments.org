@@ -7,6 +7,11 @@ tags: docs
 permalink: /changelog/
 ---
 
+## v1.6.4 - 04 July 2026
+
+### Fixed
+- Fixed translation issues in the embed widget where the comments title, load button, and loading indicator were stuck in English. Timestamps are also now dynamically localized using client-side `Intl` formatting (thanks [@Ted11](https://codeberg.org/Ted11) for [#4](https://codeberg.org/kevquirk/purecomments/issues/4)).
+
 ## v1.6.3 - 29 June 2026
 
 ### Fixed
