@@ -494,6 +494,30 @@ html[data-theme="dark"] .icon-moon { display: none; }
 .copy-btn:hover { background: var(--accent-bg); }
 .copy-btn.copied { color: var(--accent); }
 
+/* ─── Edit Page ──────────────────────────────────────────────────────────── */
+.edit-page {
+    margin-top: 2rem;
+    display: flex;
+}
+
+.edit-page-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--border);
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+.edit-page-link:hover {
+    color: var(--accent);
+}
+
+.edit-page-link svg {
+    flex-shrink: 0;
+}
+
 /* ─── Prev / Next ────────────────────────────────────────────────────────── */
 .doc-prevnext {
     display: flex;
