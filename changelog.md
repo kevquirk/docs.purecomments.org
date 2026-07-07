@@ -7,10 +7,10 @@ tags: docs
 permalink: /changelog/
 ---
 
-## Unreleased
+## v1.6.5 - 07 July 2026
 
 ### Changed
-- Updated the licence to version 1.1 to restrict only commercial hosting for a fee, while explicitly permitting free hosting for friends and family.
+- Updated the license to version 1.1 to restrict only commercial hosting for a fee, while explicitly permitting free hosting for friends and family.
 
 ### Added
 - Updated Romanian translations, completing previously missing localisation strings (thanks [@ThinkRoot](https://codeberg.org/ThinkRoot) for [#5](https://codeberg.org/kevquirk/purecomments/pulls/5)).
