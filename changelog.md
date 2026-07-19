@@ -6,6 +6,15 @@ layout: doc.njk
 tags: docs
 permalink: /changelog/
 ---
+## v1.6.6 - 19 July 2026
+
+## Changed
+- **Moved back to [GitHub](https://github.com/kevquirk/purecomments) for repo hosting.**
+- Localised the PHP timezone and date format documentation links in the setup and settings forms, allowing both the link text and URLs to be translated (thanks [@citizenk](https://github.org/citizenk) for reporting this in issue [#10](https://github.com/kevquirk/purecomments/issues/10)).
+
+### Added
+- Updated Italian translations, completing missing localisation strings (thanks [@citizenk](https://github.org/citizenk) for [#6](https://github.com/kevquirk/purecomments/pull/6)) and [#9](https://github.com/kevquirk/purecomments/pull/9).
+- Added French translations (thanks [@citizenk](https://github.org/citizenk) for [#8](https://github.com/kevquirk/purecomments/pull/8)).
 
 ## v1.6.5 - 07 July 2026
 
@@ -13,17 +22,17 @@ permalink: /changelog/
 - Updated the license to version 1.1 to restrict only commercial hosting for a fee, while explicitly permitting free hosting for friends and family.
 
 ### Added
-- Updated Romanian translations, completing previously missing localisation strings (thanks [@ThinkRoot](https://codeberg.org/ThinkRoot) for [#5](https://codeberg.org/kevquirk/purecomments/pulls/5)).
+- Updated Romanian translations, completing previously missing localisation strings (thanks [@ThinkRoot](https://github.org/ThinkRoot) for [#5](https://github.com/kevquirk/purecomments/pull/5)).
 
 ## v1.6.4 - 04 July 2026
 
 ### Fixed
-- Fixed translation issues in the embed widget where the comments title, load button, and loading indicator were stuck in English. Timestamps are also now dynamically localized using client-side `Intl` formatting (thanks [@Ted11](https://codeberg.org/Ted11) for [#4](https://codeberg.org/kevquirk/purecomments/issues/4)).
+- Fixed translation issues in the embed widget where the comments title, load button, and loading indicator were stuck in English. Timestamps are also now dynamically localized using client-side `Intl` formatting (thanks [@Ted11](https://github.org/Ted11) for [#4](https://github.com/kevquirk/purecomments/issues/4)).
 
 ## v1.6.3 - 29 June 2026
 
 ### Fixed
-- Fixed an issue where the pending comments list in the admin panel incorrectly excluded comments from guests who submitted a comment with a name matching the admin author's name (thanks [@daj](https://codeberg.org/daj) for [#3](https://codeberg.org/kevquirk/purecomments/issues/3)).
+- Fixed an issue where the pending comments list in the admin panel incorrectly excluded comments from guests who submitted a comment with a name matching the admin author's name (thanks [@daj](https://github.org/daj) for [#3](https://github.com/kevquirk/purecomments/issues/3)).
 
 ## v1.6.2 - 26 June 2026
 
@@ -36,7 +45,7 @@ permalink: /changelog/
 ## v1.6.1 - 13 June 2026
 
 ### Updated
-- German translations for search (thanks [@bttr](https://codeberg.org/bttr) for [#2](https://codeberg.org/kevquirk/purecomments/pulls/2))
+- German translations for search (thanks [@bttr](https://github.org/bttr) for [#2](https://github.com/kevquirk/purecomments/pull/2))
 
 ## v1.6.0 - 27 May 2026
 
@@ -51,14 +60,14 @@ permalink: /changelog/
 
 ## v1.5.2 - 09 May 2026
 
-Pure Comments has moved from GitHub to Codeberg. The update checker now fetches release information from Codeberg, and all relevant links have been updated accordingly.
+Pure Comments has moved from GitHub to GitHub. The update checker now fetches release information from GitHub, and all relevant links have been updated accordingly.
 
 <p class="notice warning"><strong>Upgrade notice</strong> - This release restructures the in-app updater so a <strong>manual update is required</strong>.</p>
 
 ### Manual upgrade steps
 
 1. **Back up your site** — download a copy of your entire Pure Comments directory before proceeding.
-2. **Download the v1.5.2 release zip** from the [Codeberg releases page](https://codeberg.org/kevquirk/purecomments/releases/tag/v1.5.2) and extract it.
+2. **Download the v1.5.2 release zip** from the [GitHub releases page](https://github.com/kevquirk/purecomments/releases/tag/v1.5.2) and extract it.
 3. **Delete everything EXCEPT** for the `db/` directory and the `config.php` file.
 4. **Copy the new files to your existing installation**, replacing everything except your `db/` directory and `config.php` file.
 

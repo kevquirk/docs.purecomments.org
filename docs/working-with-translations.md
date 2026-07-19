@@ -82,4 +82,4 @@ Any keys you omit use the server-translated strings from your language file. The
 
 ## Contributing a translation
 
-If you have translated Pure Comments into another language, contributions are welcome. Open a pull request on the [Pure Comments repository](https://codeberg.org/kevquirk/purecomments) adding your `lang/{code}.php` file.
+If you have translated Pure Comments into another language, contributions are welcome. Open a pull request on the [Pure Comments repository](https://github.com/kevquirk/purecomments) adding your `lang/{code}.php` file.

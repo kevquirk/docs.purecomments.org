@@ -7,7 +7,7 @@ tags: [docs]
 description: A look at how to update Pure Comments from inside the admin screen.
 ---
 
-As of [v1.1.0](https://codeberg.org/kevquirk/purecomments/releases/tag/1.1.0) Pure Comments allows you to update direct from the dashboard. To do this, visit `Settings` > `Updates` and you will be greeted by a page similar to this:
+As of [v1.1.0](https://github.com/kevquirk/purecomments/releases/tag/1.1.0) Pure Comments allows you to update direct from the dashboard. To do this, visit `Settings` > `Updates` and you will be greeted by a page similar to this:
 
 ![update 01](/assets/images/how-to-update-pure-comments/update-01.webp)
 

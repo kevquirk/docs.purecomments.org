@@ -9,7 +9,7 @@ description: Instructions on how to get started with Pure Comments.
 
 Pure Comments has been designed from the ground up to be simple to self-host and embed on your personal blog. Installation and setup is just a few steps:
 
-1. [Download the latest souce code](https://codeberg.org/kevquirk/purecomments).
+1. [Download the latest souce code](https://github.com/kevquirk/purecomments).
 2. Upload it to your server.
 3. Add the Pure Comments embed code to your blog.
 4. Enjoy!
