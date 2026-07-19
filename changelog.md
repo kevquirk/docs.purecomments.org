@@ -8,7 +8,7 @@ permalink: /changelog/
 ---
 ## v1.6.6 - 19 July 2026
 
-## Changed
+### Changed
 - **Moved back to [GitHub](https://github.com/kevquirk/purecomments) for repo hosting.**
 - Localised the PHP timezone and date format documentation links in the setup and settings forms, allowing both the link text and URLs to be translated (thanks [@citizenk](https://github.org/citizenk) for reporting this in issue [#10](https://github.com/kevquirk/purecomments/issues/10)).
 
