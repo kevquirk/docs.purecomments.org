@@ -6,6 +6,12 @@ layout: doc.njk
 tags: docs
 permalink: /changelog/
 ---
+## Unreleased
+
+### Changed
+- Migrated the in-app updater check endpoint to pull release metadata from `packages.purecommons.org/comments/latest.json` instead of the GitHub Releases API.
+- Added a `🎉 New Version Available` status header above the release metadata in the updates panel.
+
 ## v1.6.6 - 19 July 2026
 
 ### Changed
