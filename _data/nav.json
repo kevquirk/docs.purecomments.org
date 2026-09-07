@@ -22,6 +22,10 @@
             {
                 "label": "Setting up email notifications",
                 "slug": "setting-up-email-notifications"
+            },
+            {
+                "label": "Webmentions & Fediverse",
+                "slug": "webmentions-and-fediverse"
             }
         ]
     },

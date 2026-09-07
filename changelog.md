@@ -6,6 +6,19 @@ layout: doc.njk
 tags: docs
 permalink: /changelog/
 ---
+## v1.7.0 - 07 September 2026
+
+### Added
+- **Webmentions & Fediverse backfeed support:** Pure Comments can now receive and display Webmentions from IndieWeb blogs as well as backfeed replies, likes, and boosts from the Fediverse via Bridgy.
+- **Reaction facepiles:** Likes and boosts are aggregated and displayed as compact avatar facepiles above the comments section, with singular/plural count formatting.
+- **Direct Fediverse publishing:** Author replies submitted via the administration panel can be published directly back to live Fediverse conversation threads via Bridgy Publish.
+- **Webmention settings & moderation controls:** Added configuration options to enable Webmentions, specify your personal Fediverse profile URL for `<link rel="me">` discovery, and toggle auto-approval separately for reactions and text replies.
+- **Documentation:** Added a detailed guide on [Webmentions & Fediverse integration](/webmentions-and-fediverse/).
+
+### Changed
+- Non-textual reactions in the administration panel now display an informative notice rather than an empty placeholder, and the reply form is automatically disabled for likes and boosts.
+- Simplified reply button verbiage and standardised translation keys across all supported languages (English, German, French, Italian, Romanian).
+
 ## v1.6.7 - 27 July 2026
 
 ### Changed

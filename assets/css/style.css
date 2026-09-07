@@ -693,8 +693,31 @@ html[data-theme="dark"] .icon-moon { display: none; }
     background: var(--accent-bg);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 1rem 0.75rem 3.5rem;
     margin: 1.5rem 0;
+    position: relative;
+}
+
+.article-body .notice::before {
+    position: absolute;
+    left: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    line-height: 1;
+    content: "📝";
+}
+
+.article-body .notice.announce::before {
+    content: "📣";
+}
+
+.article-body .notice.tip::before {
+    content: "💡";
+}
+
+.article-body .notice.warning::before {
+    content: "⚠️";
 }
 
 /* ─── Homepage ───────────────────────────────────────────────────────────── */
