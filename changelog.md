@@ -6,6 +6,13 @@ layout: doc.njk
 tags: docs
 permalink: /changelog/
 ---
+## 1.7.2 - 08 September 2026
+
+### Fixed
+- Fixed Fediverse reply mentions in the administration panel so replies extract and target the author's full `@username@instance` handle from their profile URL instead of prepending `@` to display names.
+- Fixed Fediverse conversation threading for published author replies by translating Bridgy comment URLs into canonical Fediverse status URLs in `comment.php`, ensuring replies correctly attach to live threads.
+- Resolved author reply Webmention source URLs via `post_base_url` and added `<link rel="me">` author discovery links in `comment.php`.
+
 ## 1.7.1 - 08 September 2026
 
 ### Fixed
