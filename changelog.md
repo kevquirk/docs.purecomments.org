@@ -21,7 +21,7 @@ permalink: /changelog/
 ### Added
 - **Webmentions & Fediverse backfeed support:** Pure Comments can now receive and display Webmentions from IndieWeb blogs as well as backfeed replies, likes, and boosts from the Fediverse via Bridgy.
 - **Reaction facepiles:** Likes and boosts are aggregated and displayed as compact avatar facepiles above the comments section, with singular/plural count formatting.
-- **Direct Fediverse publishing:** Author replies submitted via the administration panel can be published directly back to live Fediverse conversation threads via Bridgy Publish.
+- **Webmention author replies:** Author replies submitted via the administration panel generate IndieWeb-compatible `h-entry` permalinks for Webmention replies.
 - **Webmention settings & moderation controls:** Added configuration options to enable Webmentions, specify your personal Fediverse profile URL for `<link rel="me">` discovery, and toggle auto-approval separately for reactions and text replies.
 - **Documentation:** Added a detailed guide on [Webmentions & Fediverse integration](/webmentions-and-fediverse/).
 

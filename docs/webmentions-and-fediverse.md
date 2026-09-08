@@ -57,7 +57,6 @@ To allow Bridgy to discover interactions and backfeed them to your site:
 5. Once connected, your account page on Bridgy will show:
    - **`@username@instance · yoursite.com`**
    - **`Backfeeding responses.`**
-6. *(Optional)* If you would like your author replies written in Pure Comments to post back to Mastodon as replies in the Fediverse, click the purple **Enable publishing: mastodon** button to grant publishing permissions.
 
 Bridgy is now active and will periodically poll your account for interactions on links to your blog.
 
@@ -71,4 +70,4 @@ Whenever you write a new blog post:
 
 <p class="notice">Bridgy polls on an automated schedule in the background. If you want to check an interaction immediately during testing, you can click <strong>Poll now</strong> or use the <strong>Resend for post</strong> tool on your Bridgy dashboard.</p>
 
-<p class="notice tip"><strong>Note on replying to Fediverse comments:</strong> When you submit an author reply to a Fediverse comment in the Pure Comments administration panel, Pure Comments communicates with Bridgy and the Mastodon API to publish your reply to the live Fediverse thread in real time. This round-trip can take a few seconds (typically 3–5 seconds) before the administration page reloads.</p>
+<p class="notice tip"><strong>Note on replying to Fediverse comments:</strong> When you receive comments from the Fediverse, the recommended way to reply is directly from your Mastodon app or client. Bridgy will detect your reply in the live conversation thread and automatically backfeed it into Pure Comments on its next poll.</p>
