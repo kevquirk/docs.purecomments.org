@@ -15,7 +15,6 @@ permalink: /changelog/
 ### Changed
 - Improved input field and textarea spacing in the embedded comment form.
 - Refined avatar rendering for reaction facepiles.
-- Resolved author reply Webmention source URLs via `post_base_url` and included `rel="me"` author discovery links in `comment.php` for seamless subdomain publishing.
 
 ## v1.7.0 - 07 September 2026
 
