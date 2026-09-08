@@ -6,6 +6,15 @@ layout: doc.njk
 tags: docs
 permalink: /changelog/
 ---
+## 1.7.1 - 08 September 2026
+
+### Fixed
+- Fixed an issue where Webmentions targeting a site's root homepage URL were incorrectly attributed to the most recently commented post slug instead of resolving to `home`.
+
+### Changed
+- Improved input field and textarea spacing in the embedded comment form.
+- Refined avatar rendering for reaction facepiles.
+
 ## v1.7.0 - 07 September 2026
 
 ### Added
