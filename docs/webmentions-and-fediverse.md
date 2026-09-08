@@ -71,3 +71,5 @@ Whenever you write a new blog post:
 <p class="notice">Bridgy polls on an automated schedule in the background. If you want to check an interaction immediately during testing, you can click <strong>Poll now</strong> or use the <strong>Resend for post</strong> tool on your Bridgy dashboard.</p>
 
 <p class="notice tip"><strong>Note on replying to Fediverse comments:</strong> When you receive comments from the Fediverse, the recommended way to reply is directly from your Mastodon app or client. Bridgy will detect your reply in the live conversation thread and automatically backfeed it into Pure Comments on its next poll.</p>
+
+<p class="notice warning"><strong>Outbound Webmention replies:</strong> If you reply to a Webmention directly from the Pure Comments administration panel, Bridgy Publish requires your comments installation to either reside on the same domain as your main site or be listed as a link in your Fediverse profile metadata. If your comments installation is on a separate subdomain that is not listed on your profile, Bridgy will not syndicate outbound replies to the Fediverse.</p>
