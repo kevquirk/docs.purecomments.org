@@ -71,4 +71,18 @@ Whenever you write a new blog post:
 
 <p class="notice">Bridgy polls on an automated schedule in the background. If you want to check an interaction immediately during testing, you can click <strong>Poll now</strong> or use the <strong>Resend for post</strong> tool on your Bridgy dashboard.</p>
 
-<p class="notice tip"><strong>Note on replying to Fediverse comments:</strong> When you submit an author reply to a Fediverse comment in the Pure Comments administration panel, Pure Comments communicates synchronously with Bridgy and the Mastodon API to publish your reply to the live Fediverse thread in real time. This round-trip can take a few seconds (typically 3–5 seconds) before the administration page reloads.</p>
+<p class="notice tip"><strong>Note on replying to Fediverse comments:</strong> When you submit an author reply to a Fediverse comment in the Pure Comments administration panel, Pure Comments communicates with Bridgy and the Mastodon API to publish your reply to the live Fediverse thread in real time. This round-trip can take a few seconds (typically 3–5 seconds) before the administration page reloads.</p>
+
+### Hosting Pure Comments on a Subdomain (Publishing Author Replies)
+
+If you host Pure Comments on a subdomain (e.g. `https://comments.example.com`) whilst your blog lives on your primary domain (e.g. `https://example.com`), Bridgy requires published webmentions to match the primary domain registered with your Fediverse profile.
+
+Add the following rule to the `.htaccess` file on your **primary blog domain**:
+
+```apache
+# Pure Comments - Webmention reply resolution
+RewriteRule ^comment\.php$ https://comments.example.com/comment.php [P,L]
+```
+*(Replace `https://comments.example.com` with your actual comments backend URL).*
+
+When you publish a reply from the Pure Comments dashboard, Bridgy will resolve the reply through your primary verified domain and publish your post directly to the Fediverse.
