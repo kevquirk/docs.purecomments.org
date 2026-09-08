@@ -10,6 +10,7 @@ permalink: /changelog/
 
 ### Fixed
 - Fixed an issue where Webmentions targeting a site's root homepage URL were incorrectly attributed to the most recently commented post slug instead of resolving to `home`.
+- Fixed an issue in the in-app updater where root files introduced in newer versions (such as `comment.php`) were not tracked in the core file list and were therefore omitted during updates.
 
 ### Changed
 - Improved input field and textarea spacing in the embedded comment form.
