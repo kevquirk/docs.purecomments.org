@@ -6,6 +6,17 @@ layout: doc.njk
 tags: docs
 permalink: /changelog/
 ---
+## 1.7.3 - 11 September 2026
+
+### Added
+- Added DoS throttling protection for moderation notification emails, ensuring that surges of incoming comments or Webmentions within a 5-minute window only trigger a single notification email.
+
+### Changed
+- Boosts and likes are now hidden by default on the administration dashboard to reduce clutter, with a rocker switch toggle added below the search box to view them on demand.
+
+### Fixed
+- Fixed an issue where author replies published to the Fediverse via Bridgy were backfed via Webmentions and created duplicate loopback comments. Incoming Webmentions originating from the configured author Fediverse profile or site domain are now automatically identified and filtered out.
+
 ## 1.7.2 - 08 September 2026
 
 ### Fixed
