@@ -6,6 +6,9 @@ layout: doc.njk
 tags: docs
 permalink: /changelog/
 ---
+## Unreleased
+- Added lines to `.htaccess` that prevents public access to the `db` and `backup` folders.
+
 ## 1.7.4 - 15 September 2026
 
 ### Fixed
