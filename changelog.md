@@ -6,6 +6,11 @@ layout: doc.njk
 tags: docs
 permalink: /changelog/
 ---
+## 1.7.4 - 15 September 2026
+
+### Fixed
+- Fixed an issue where attached images in Fediverse comments and Webmentions (such as `u-photo` entry attachments or JSON-LD media) were omitted and stripped during HTML sanitisation.
+
 ## 1.7.3 - 11 September 2026
 
 ### Added
