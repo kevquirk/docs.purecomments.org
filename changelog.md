@@ -6,8 +6,26 @@ layout: doc.njk
 tags: docs
 permalink: /changelog/
 ---
-## Unreleased
-- Added lines to `.htaccess` that prevents public access to the `db` and `backup` folders.
+## 1.8.0 - 21 September 2026
+
+### Added
+- **Native Multi-Factor Authentication** in User Settings.
+    - SVG QR code generation and manual secret key copying during MFA setup.
+    - 8 single-use recovery backup codes with one-click copying to prevent administrator lockouts.
+    - Two-step login authentication challenge supporting both 6-digit TOTP codes and backup recovery codes, integrated with IP rate limiting and lockout protection.
+- **Settings UI with Tabs**: Restructured the settings interface into dedicated tabs (**General**, **Author & Email**, **Spam & Webmentions**, **Customisation**, **User**, and **Updates**).
+- **Global Keyboard Shortcut**: Added `Ctrl+S` / `Cmd+S` shortcut across all settings pages to quickly save settings.
+- **Admin Customisation**: Added admin font stack selection (Monospace, Inter, Merriweather) with bundled local font files, alongside an admin custom CSS editor saved to `data/css/admin-custom.css`.
+- **Update Notification Banners**: Added update alert banners to the admin dashboard and settings navigation backed by a cached release checker.
+
+### Changed
+- Moved update result and backup path notices in `updates.php` to the top of the page directly beneath the heading and navigation tabs.
+- Added `data/` to preserved updater paths so custom CSS and local cache files are protected during updates.
+- Added rules to `.htaccess` that prevent public access to the `db` and `backup` folders.
+
+### Fixed
+- Fixed an issue where the configured author avatar URL was not returned in the embed comments API or displayed for author comments and admin replies.
+- Fixed styling for single-line error notices across the admin interface so they render with consistent red borders and backgrounds in both light and dark mode.
 
 ## 1.7.4 - 15 September 2026
 
