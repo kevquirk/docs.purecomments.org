@@ -6,6 +6,17 @@ layout: doc.njk
 tags: docs
 permalink: /changelog/
 ---
+
+## 1.8.1 - 25 September 2026
+
+### Fixed
+- Fixed an issue where Bridgy backfeed comment URLs were improperly translated into invalid Fediverse post URLs, causing reply publishing to fail.
+- Fixed `comment.php` endpoint URLs in reply Webmentions to resolve against the moderation base URL so subfolder installations are preserved.
+- Improved Fediverse target detection in outgoing Webmentions to support various Fediverse instance URL schemes.
+
+### Added
+- Added warning notice to read docs on Webmention settings.
+
 ## 1.8.0 - 21 September 2026
 
 ### Added
