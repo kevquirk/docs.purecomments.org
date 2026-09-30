@@ -7,6 +7,11 @@ tags: docs
 permalink: /changelog/
 ---
 
+## Unreleased
+
+### Fixed
+- Fixed an issue on the updates page where the back button linked to settings instead of the comments dashboard.
+
 ## 1.8.1 - 25 September 2026
 
 ### Fixed
