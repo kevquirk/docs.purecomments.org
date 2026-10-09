@@ -7,9 +7,10 @@ tags: docs
 permalink: /changelog/
 ---
 
-## Unreleased
+## 1.8.2 - 09 October 2026
 
 ### Fixed
+- Fixed an issue where Fediverse comments replying to other Fediverse comments arrived unthreaded as top-level comments. Pure Comments now extracts in-reply-to targets from incoming Webmentions and nests replies under their respective parent comments. Thanks to [@BenediktFloeser](https://github.com/BenediktFloeser) for reporting [issue #7](https://github.com/kevquirk/purecomments/issues/7).
 - Fixed an issue on smaller screens where Fediverse and Webmention badges or long author names caused comment headers and timestamps to overflow and wrap improperly.
 - Fixed an issue on the updates page where the back button linked to settings instead of the comments dashboard.
 
