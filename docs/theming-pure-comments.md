@@ -22,3 +22,24 @@ From here you can edit `comments.css` to fit the style of your blog's design. If
 
 ![comments example dark](/assets/images/theming-pure-comments/comments-example-dark.webp)
 *Dark mode*
+
+## Anti-spam honeypot styling
+
+The comment form rendered by `embed.js` includes an invisible anti-spam honeypot field (`<input type="text" name="trap_field" class="hp-field">`). The default `comments.css` hides this field off-screen:
+
+```css
+#comments .hp-field {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+```
+
+<p class="notice warning">If you create your own stylesheet from scratch instead of adapting <code>comments.css</code>, always make sure you retain the <code>#comments .hp-field</code> rule. If this rule is omitted, the honeypot field will appear as an extra input box, and any text entered into it by genuine visitors will cause their comment to be rejected as spam.</p>
+
