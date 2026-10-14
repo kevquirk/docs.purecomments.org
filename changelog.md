@@ -7,6 +7,11 @@ tags: docs
 permalink: /changelog/
 ---
 
+## Unreleased
+
+### Added
+- Added Dutch language support. Thanks to [@RobbyTown](https://github.com/RobbyTown) for [pull request #8](https://github.com/kevquirk/purecomments/pull/8).
+
 ## 1.8.2 - 09 October 2026
 
 ### Fixed
