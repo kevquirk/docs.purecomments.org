@@ -7,9 +7,11 @@ tags: docs
 permalink: /changelog/
 ---
 
-## Unreleased
+## 1.8.3 - 19 October 2026
 
 ### Added
+- Added support for the `data-autoload` attribute on the comment container and script tag, allowing comments and the submission form to load automatically via `IntersectionObserver` without requiring a button click. [Read the docs](https://docs.purecomments.org/working-with-data-attributes/).
+    - Thanks to [Ray](https://alongtheray.com) for the idea.
 - Added Dutch language support. Thanks to [@RobbyTown](https://github.com/RobbyTown) for [pull request #8](https://github.com/kevquirk/purecomments/pull/8).
 
 ## 1.8.2 - 09 October 2026
