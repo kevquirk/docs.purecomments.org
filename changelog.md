@@ -7,6 +7,15 @@ tags: docs
 permalink: /changelog/
 ---
 
+## 1.8.4 - 22 October 2026
+
+### Fixed
+- Fixed an issue where reply notification emails and admin dashboard links broke on sites with nested URL structures (such as date-based paths, categories, or subdirectories). Pure Comments now records the post path and correctly reconstructs URLs for nested paths. Thanks to [@ScootRay](https://github.com/ScootRay) for reporting [issue #9](https://github.com/kevquirk/purecomments/issues/9).
+
+### Added
+- Added support for the `data-post-path` attribute on the comment container to optionally specify an explicit post path. [Read the docs](https://docs.purecomments.org/working-with-data-attributes/).
+- Added support for the `$config['post_paths']` configuration option to allow manual slug-to-path overrides.
+
 ## 1.8.3 - 19 October 2026
 
 ### Added

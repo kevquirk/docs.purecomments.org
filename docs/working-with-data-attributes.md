@@ -44,6 +44,22 @@ You can use `data-post-slug` on the `#comments` container when you want to expli
 
 Different slugs create different threads. If your blog's URL structure changes later, explicit slugs help prevent comment history from splitting across multiple threads.
 
+## data-post-path (Optional)
+
+`embed.js` automatically infers the current post path from `window.location.pathname` and records it when comments are submitted. This ensures that reply notification emails and admin dashboard links point to the correct post URL even if your posts live in nested directory structures (such as `/2024/10/my-post/` or `/category/my-post/`).
+
+You can use `data-post-path` on the `#comments` container to explicitly specify or override this path:
+
+```html
+<div id="comments" data-post-path="/2024/10/my-first-post/"></div>
+<script src="https://comments.example.com/public/embed.js" defer></script>
+```
+
+### When to use it
+
+- Your site uses nested permalinks or subdirectories and you want to ensure the exact canonical path is recorded.
+- You are pre-rendering comments on an alternate route but want links to point to a specific permalink.
+
 ## data-base-url (Optional)
 
 You can also use `data-base-url` on the script tag when API calls should go to a different origin than the script file.
