@@ -11,6 +11,7 @@ export default function (eleventyConfig) {
     eleventyConfig.setLibrary("md", md);
 
     eleventyConfig.addPassthroughCopy("assets");
+    eleventyConfig.addPassthroughCopy(".htaccess");
 
     eleventyConfig.ignores.add("reallysimpledocs-main/**");
 

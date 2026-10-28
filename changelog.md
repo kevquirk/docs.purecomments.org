@@ -7,6 +7,27 @@ tags: docs
 permalink: /changelog/
 ---
 
+## 1.8.5 - 28 October 2026
+
+### Changed
+- **Webmentions Refactor & Fediverse Decoupling**: Completely removed all Fediverse, Bridgy, and ActivityPub backfeed integrations to restore Webmentions to their original IndieWeb purpose: simple, self-contained notification citations. Inspired by [Manu Moreale's thoughts on privacy and webmentions](https://manuelmoreale.com/thoughts/thinking-about-privacy-and-webmentions) and detailed in my announcement, [Pure Comments and the Fediverse](https://kevquirk.com/pure-comments-and-the-fediverse).
+- **Self-Contained Architecture**: Removed all reliance on third-party services such as Bridgy and webmention.io. The native Webmention receiver endpoint and direct W3C endpoint discovery now operate 100% locally and independently.
+- **Dedicated Webmentions Section**: Webmentions are now presented in a dedicated "Webmentions" section on the frontend widget rather than threaded directly into the comment tree. Each mention displays the source post title, site/author name, link to the source post, timestamp, and a clean excerpt.
+   - 📝 **Note:** Make sure you update your Comments CSS if you're using your own stylesheet to ensure Webmentions are styles correctly.
+- **Microformats Parser Simplification**: Streamlined the HTML and microformats parser to extract only post title, author/site name, website, and an excerpt without downloading third-party images or scraping full post bodies.
+- **Admin Panel Clean-up**: Removed the Fediverse profile URL setting, Bridgy publish markup, Fediverse handle checks, and the dashboard reactions filter. Replaced separate reaction and reply auto-approve toggles with a single "Auto-approve incoming Webmentions" setting.
+- ⚠️⚠️ **WARNING - Automatic Legacy Data Purge**: Upgrading automatically purges legacy Fediverse data (likes, boosts, and Bridgy replies) along with any child replies from the database to prevent orphaned partial conversations.
+    - **Mention Excerpt Clean-up & Image Stripping**: All images are stripped completely from Webmention excerpts to keep mentions neat and uncluttered. Existing mentions in the database are automatically reformatted to match the new clean excerpt layout.
+    - **Legacy Title Migration & Backfill**: Upgrading automatically backfills post titles for legacy Webmentions that lacked titles from earlier versions by fetching their source metadata once, recording the migration in a new `schema_migrations` table.
+- **Webmention Display Polish**: The frontend embed widget deduplicates titles and author names, preventing author names from repeating if a mention's title matches or falls back to the author's name.
+
+### Fixed
+- **Webmention Status Demotion & Notification Floods**: Fixed a bug where incoming re-pings from static site builds demoted previously approved Webmentions back to `pending` and re-sent moderation notification emails on every automated rebuild. Webmentions now preserve their `published` status and re-pings no longer trigger duplicate notification emails.
+- **Webmention Resurrection on Deletion**: Fixed an issue where deleting a Webmention from the moderation dashboard purged the row from the database without recording the deletion, leading subsequent static site deploys from the sender to recreate it as a new pending comment. Deleting a Webmention now automatically registers its source URL in `blocked_webmentions`, ignoring future re-pings.
+
+### Added
+- **Webmention Source & Domain Blocklist**: Added a "Blocked sources & domains" management setting under Spam & Webmentions. Blocked domains or URLs are immediately rejected with an HTTP 202 response without downloading remote content or dispatching moderation emails.
+
 ## 1.8.4 - 22 October 2026
 
 ### Fixed

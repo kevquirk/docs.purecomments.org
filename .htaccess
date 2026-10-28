@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^webmentions-and-fediverse/?$ /webmentions/ [R=301,L]
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+    Redirect 301 /webmentions-and-fediverse/ /webmentions/
+    Redirect 301 /webmentions-and-fediverse /webmentions/
+</IfModule>
