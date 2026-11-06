@@ -6,6 +6,10 @@ layout: doc.njk
 tags: docs
 permalink: /changelog/
 ---
+## 1.8.6 - 06 November 2026
+
+### Fixed
+- Removed deprecated `curl_close()` calls across the codebase for PHP 8.5 compatibility. Thanks to [@mdbdb](https://github.com/mdbdb) for reporting [issue #10](https://github.com/kevquirk/purecomments/issues/10).
 
 ## 1.8.5 - 28 October 2026
 
